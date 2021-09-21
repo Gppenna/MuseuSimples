@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .header-ficha {
+    display: flex;
+    flex-direction: row;
+}
+
+.content .header-info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 60%;
+}
+
+.content .content-cards {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.content .content-ficha {
+    margin: 0 10px;
+}
+
+.content .content-ficha .ficha-card:not(:last-child) {
+    margin-right: 20px;
+}
+
+.content .content-ficha .ficha-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(256, 256, 256, 0.6);
+    border-radius: 20px;
+}
+
+.content .content-ficha .ficha-card-w100 {
+    padding: 20px;
+    background-color: rgb(256, 256, 256, 0.6);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.content .content-ficha .ficha-card .ficha-unit p:first-child,
+.content .content-ficha .ficha-card-w100 .ficha-unit p:first-child {
+    font-weight: bold;
+    margin: 0;
+}
+
+.content .content-ficha .ficha-card .ficha-unit {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .header-info #especie {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.2;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    width: fit-content;
+    color: rgb(1, 63, 48);
+    margin-bottom: 0.5rem;
+}
+
+.content .header-info #nome_popular {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.content .header-info #autor {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
+
+.content .header-image {
+    display: flex;
+    width: 40%;
+}
+
+.content .header-image .header-image-background {
+    display: flex;
+    background-image: url('../images/default.png');
+    background-repeat: repeat-x;    
+    background-size:cover;
+    background-position: center;
+    height: 200px;
+    width: 100%; /* may not be necessary */
+}
