@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+section.catalogo {
+	display: flex;
+}
+
+form {
+    padding: 50px 10px;
+    background: rgb(1, 63, 48);
+}
+
+.container-principal {
+	padding: 50px 30px;
+	width: 100%;
+	background-image: url("../images/estampa.jpeg");
+	background-repeat: repeat;
+
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 60px;
+}
+
+td {
+	margin: 5px 0;
+}
+
+td label {
+	color: #fff;
+}
+
+.button {
+	width: 100%;
+}

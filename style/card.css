@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s;
+}
+
+/* Formato do card na tela */
+
+    .content {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .content .card-link {
+        margin-left: 0;
+        color: #080100;
+        text-decoration: none;
+        margin: 20px;
+    }
+
+    .content .card {
+        border: 1px solid #000;
+    }
+
+    .content .card:hover {
+        box-shadow: 0 0.0625rem 0.0625rem 0 rgba(134,77,0,0.35);
+    }
+
+    .content .card .card-info {
+        margin: 20px 10px;
+        text-align: center;
+    }
+
+    .content .card .card-info p {
+        margin: 0;
+    }
+
+    .content .card-image {
+        display: flex;
+    }
+
+    .content .card-image .card-image-background {
+        display: flex;
+        background-image: url('../images/default.png');
+        background-repeat: repeat-x;    
+        background-size:cover;
+        background-position: center;
+        height: 200px;
+        width: 100%; /* may not be necessary */
+    }
+
+    
+
+/* Informações dentro do card */
+
+    .content .card .card-info #ordem_familia {
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    .content .card .card-info #especie {
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .content .card .card-info #autor_ano {
+        font-size: 14px;
+        font-weight: 500;
+
+    }
+
+
